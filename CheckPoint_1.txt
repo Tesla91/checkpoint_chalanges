@@ -1,0 +1,218 @@
+Intro to Software Engineering
+Check-Point Challenge #1
+
+This is a closed book, and no internet checkpoint exam. Please complete this test using Vim.
+
+Do your best to answer each question below. Take as much time as you need. 
+
+————————————————————————
+
+
+* What does “CLI” stand for
+Command Line Interface
+
+* What decimal number does this binary number represent? 010101010
+1 2 4 8 16 32 64 128 256       
+128 + 32 + 8 + 2 = 170
+
+* What is EC2?
+Elastic Cloud Computing 
+
+* What is “the cloud”?
+Shared resources that are not located on your computer, or localy in your office.
+
+
+* What is Git?
+A version control system and a collaboration tool.
+
+
+* What is the general workflow of Git?
+git clone <url>
+or 
+git init
+git remote add <url>
+git add
+git commit -m "comment"
+git pull
+git push
+
+
+* How do you create a new branch and check it out in one command?
+git checkout -b <name of new branch>  
+
+
+* How do you view the manual for Git?
+man git 
+
+
+* How do you view the manual for a specific Git command?
+git help <verb>
+
+
+* How do you initialize an empty Git repository on your computer?
+git init
+
+
+* How do you clone a Git repository from a remote repository?
+git clone <url>
+
+
+* How do you add a second remote repository to your local Git repo?
+git add remote <name> <url>
+
+
+* How do you push from your local machine to your second remote repo?
+git push <name> <branch>
+
+
+* How do you view the history of all published Git commits in your terminal?
+git log
+
+
+* What does “JVM” stand for?
+java virtual machine
+
+
+* What are the three primary tenets of OOP? Briefly explain each.
+Encapsulation: all data and methods that act on that data are encapsulating in a class/object - access modifiers play a big role as , ie private variables
+
+Polymorphism: The ability of one class (or method) to take may forms - for instance the everal times overloaded println() method - which allows us to pass any data type to a single (overridden/overloaded) method
+
+Inheritance: One class can extend another (parent) class and inherit all it's public and protected traits. For instance, Class Apple extends Fruit{} Class Fruit extends Food.
+
+
+* How do you format the main() method signature?
+public static void main(String[] args)
+
+
+* Name as many Java data types as you can:
+int
+double
+float
+byte
+short
+long
+boolian
+char
+String
+Array
+Any object
+
+* What is the value of “y” at the end of the following commands? 
+        int i = 4;
+        int x = 10;
+        int y = x/i;
+
+y = 2
+
+* Write a basic “if” statement:
+if (condition){
+	// do something
+}
+
+                
+* Write a basic “for” loop:
+for (x = 0; x < 10; x++)
+
+
+* Write a basic “while” loop:
+while (condition){
+	//do something
+}
+
+        
+* What does the “&&” operator do?
+stops the rest of the problem from iterating if the first part is not true
+
+
+* How does the “&&” operator differ from the “||” operator?
+for the && operator the first one needs to be true to test the second one
+for || the first verable needs to be false to test the second one
+
+
+* Explain what variable “scope” means and how it is determined in Java:
+Variable scope is the lifetime and visability of a variable. Variables declared in nested code blocks cannot be used once that code block has been left.
+
+
+* What does nested scope mean? Write a small example below.
+class ScopeExample{
+	int var1;
+
+	public int method1(String s){
+
+		int var2;
+
+		for (int i =0; i < 10; i++){
+			int var3 = x;
+		}
+	}
+	// var3 is not accessable here
+}
+
+* What is the “lifetime” of a variable?
+A variable is only accessable while within the scope.
+
+
+
+* What data type does ‘c’ represent?
+Char
+
+
+
+* What does boolean mean?
+True or False
+
+
+
+* What is going on here? int z = (int) x;
+x is being casted
+
+
+
+* What does the keyword “break” do?
+escapes the nearest  loop
+
+
+
+* What does the keyword “continue” do?
+forces the next iteration of the loop to take place skipping any remaining code
+
+
+
+* What does the keyword “return” do? 
+exits a method and returns a value on no value to the caller
+
+
+
+* Write two very basic methods (include method declaration/signatures) that demonstrate the two ways you can use the “return” keyword.
+int a;
+int b;
+double x;
+double y;
+
+public static int multiply(int a, int b){
+return a * b;
+}
+public static double divide(double x, double y){
+return x / y;
+}
+ 
+
+* Write a simple main() method that uses a loop to print out every even number between 0 and 200 in reverse order:
+public static void main(String [] args){
+int i;
+
+    for (i = 200; i >= 0; i--)
+        if (i % 2 == 0){
+        
+        }    
+	sout(i);
+}
+
+
+
+
+Congrats! You’re all done! Let’s have some beers! :)
+
+
+
